@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/eliasmann/Desktop/Algorithms/Midterm_SplayTree/SplayTree.cpp
+SplayTree.h
+/Users/eliasmann/Desktop/Algorithms/Midterm_SplayTree/SplayTree.h
+
+/Users/eliasmann/Desktop/Algorithms/Midterm_SplayTree/SplayTree.h
+iostream
+-
+
+/Users/eliasmann/Desktop/Algorithms/Midterm_SplayTree/main.cpp
+SplayTree.h
+/Users/eliasmann/Desktop/Algorithms/Midterm_SplayTree/SplayTree.h
+

@@ -1,0 +1,1 @@
+/Library/Developer/CommandLineTools/usr/bin/c++  -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/Midterm_SplayTree.dir/main.cpp.o CMakeFiles/Midterm_SplayTree.dir/SplayTree.cpp.o  -o Midterm_SplayTree 
