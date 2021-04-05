@@ -1,4 +1,4 @@
-# Install script for directory: /Users/eliasmann/Desktop/Algorithms/Midterm_SplayTree
+# Install script for directory: /Users/eliasmann/Desktop/Algorithms/Mann_CS3353_Midterm_SplayTree/Midterm_SplayTree
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/eliasmann/Desktop/Algorithms/Midterm_SplayTree/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/eliasmann/Desktop/Algorithms/Mann_CS3353_Midterm_SplayTree/Midterm_SplayTree/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

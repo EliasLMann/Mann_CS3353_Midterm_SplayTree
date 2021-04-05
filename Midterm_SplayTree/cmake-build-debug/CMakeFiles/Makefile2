@@ -44,10 +44,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/eliasmann/Desktop/Algorithms/Midterm_SplayTree
+CMAKE_SOURCE_DIR = /Users/eliasmann/Desktop/Algorithms/Mann_CS3353_Midterm_SplayTree/Midterm_SplayTree
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/eliasmann/Desktop/Algorithms/Midterm_SplayTree/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/eliasmann/Desktop/Algorithms/Mann_CS3353_Midterm_SplayTree/Midterm_SplayTree/cmake-build-debug
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -74,14 +74,14 @@ clean: CMakeFiles/Midterm_SplayTree.dir/clean
 CMakeFiles/Midterm_SplayTree.dir/all:
 	$(MAKE) -f CMakeFiles/Midterm_SplayTree.dir/build.make CMakeFiles/Midterm_SplayTree.dir/depend
 	$(MAKE) -f CMakeFiles/Midterm_SplayTree.dir/build.make CMakeFiles/Midterm_SplayTree.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/eliasmann/Desktop/Algorithms/Midterm_SplayTree/cmake-build-debug/CMakeFiles --progress-num=1,2,3 "Built target Midterm_SplayTree"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/eliasmann/Desktop/Algorithms/Mann_CS3353_Midterm_SplayTree/Midterm_SplayTree/cmake-build-debug/CMakeFiles --progress-num=1,2,3 "Built target Midterm_SplayTree"
 .PHONY : CMakeFiles/Midterm_SplayTree.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Midterm_SplayTree.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/eliasmann/Desktop/Algorithms/Midterm_SplayTree/cmake-build-debug/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/eliasmann/Desktop/Algorithms/Mann_CS3353_Midterm_SplayTree/Midterm_SplayTree/cmake-build-debug/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/Midterm_SplayTree.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/eliasmann/Desktop/Algorithms/Midterm_SplayTree/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/eliasmann/Desktop/Algorithms/Mann_CS3353_Midterm_SplayTree/Midterm_SplayTree/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/Midterm_SplayTree.dir/rule
 
 # Convenience name for target.
