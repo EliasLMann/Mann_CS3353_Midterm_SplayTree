@@ -57,42 +57,42 @@ include CMakeFiles/Midterm_SplayTree.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/Midterm_SplayTree.dir/flags.make
 
-CMakeFiles/Midterm_SplayTree.dir/main.cpp.o: CMakeFiles/Midterm_SplayTree.dir/flags.make
-CMakeFiles/Midterm_SplayTree.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/eliasmann/Desktop/Algorithms/Mann_CS3353_Midterm_SplayTree/Midterm_SplayTree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Midterm_SplayTree.dir/main.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Midterm_SplayTree.dir/main.cpp.o -c /Users/eliasmann/Desktop/Algorithms/Mann_CS3353_Midterm_SplayTree/Midterm_SplayTree/main.cpp
+CMakeFiles/Midterm_SplayTree.dir/src/main.cpp.o: CMakeFiles/Midterm_SplayTree.dir/flags.make
+CMakeFiles/Midterm_SplayTree.dir/src/main.cpp.o: ../src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/eliasmann/Desktop/Algorithms/Mann_CS3353_Midterm_SplayTree/Midterm_SplayTree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Midterm_SplayTree.dir/src/main.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Midterm_SplayTree.dir/src/main.cpp.o -c /Users/eliasmann/Desktop/Algorithms/Mann_CS3353_Midterm_SplayTree/Midterm_SplayTree/src/main.cpp
 
-CMakeFiles/Midterm_SplayTree.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Midterm_SplayTree.dir/main.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/eliasmann/Desktop/Algorithms/Mann_CS3353_Midterm_SplayTree/Midterm_SplayTree/main.cpp > CMakeFiles/Midterm_SplayTree.dir/main.cpp.i
+CMakeFiles/Midterm_SplayTree.dir/src/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Midterm_SplayTree.dir/src/main.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/eliasmann/Desktop/Algorithms/Mann_CS3353_Midterm_SplayTree/Midterm_SplayTree/src/main.cpp > CMakeFiles/Midterm_SplayTree.dir/src/main.cpp.i
 
-CMakeFiles/Midterm_SplayTree.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Midterm_SplayTree.dir/main.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/eliasmann/Desktop/Algorithms/Mann_CS3353_Midterm_SplayTree/Midterm_SplayTree/main.cpp -o CMakeFiles/Midterm_SplayTree.dir/main.cpp.s
+CMakeFiles/Midterm_SplayTree.dir/src/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Midterm_SplayTree.dir/src/main.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/eliasmann/Desktop/Algorithms/Mann_CS3353_Midterm_SplayTree/Midterm_SplayTree/src/main.cpp -o CMakeFiles/Midterm_SplayTree.dir/src/main.cpp.s
 
-CMakeFiles/Midterm_SplayTree.dir/SplayTree.cpp.o: CMakeFiles/Midterm_SplayTree.dir/flags.make
-CMakeFiles/Midterm_SplayTree.dir/SplayTree.cpp.o: ../SplayTree.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/eliasmann/Desktop/Algorithms/Mann_CS3353_Midterm_SplayTree/Midterm_SplayTree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Midterm_SplayTree.dir/SplayTree.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Midterm_SplayTree.dir/SplayTree.cpp.o -c /Users/eliasmann/Desktop/Algorithms/Mann_CS3353_Midterm_SplayTree/Midterm_SplayTree/SplayTree.cpp
+CMakeFiles/Midterm_SplayTree.dir/src/SplayTree.cpp.o: CMakeFiles/Midterm_SplayTree.dir/flags.make
+CMakeFiles/Midterm_SplayTree.dir/src/SplayTree.cpp.o: ../src/SplayTree.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/eliasmann/Desktop/Algorithms/Mann_CS3353_Midterm_SplayTree/Midterm_SplayTree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Midterm_SplayTree.dir/src/SplayTree.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Midterm_SplayTree.dir/src/SplayTree.cpp.o -c /Users/eliasmann/Desktop/Algorithms/Mann_CS3353_Midterm_SplayTree/Midterm_SplayTree/src/SplayTree.cpp
 
-CMakeFiles/Midterm_SplayTree.dir/SplayTree.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Midterm_SplayTree.dir/SplayTree.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/eliasmann/Desktop/Algorithms/Mann_CS3353_Midterm_SplayTree/Midterm_SplayTree/SplayTree.cpp > CMakeFiles/Midterm_SplayTree.dir/SplayTree.cpp.i
+CMakeFiles/Midterm_SplayTree.dir/src/SplayTree.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Midterm_SplayTree.dir/src/SplayTree.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/eliasmann/Desktop/Algorithms/Mann_CS3353_Midterm_SplayTree/Midterm_SplayTree/src/SplayTree.cpp > CMakeFiles/Midterm_SplayTree.dir/src/SplayTree.cpp.i
 
-CMakeFiles/Midterm_SplayTree.dir/SplayTree.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Midterm_SplayTree.dir/SplayTree.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/eliasmann/Desktop/Algorithms/Mann_CS3353_Midterm_SplayTree/Midterm_SplayTree/SplayTree.cpp -o CMakeFiles/Midterm_SplayTree.dir/SplayTree.cpp.s
+CMakeFiles/Midterm_SplayTree.dir/src/SplayTree.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Midterm_SplayTree.dir/src/SplayTree.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/eliasmann/Desktop/Algorithms/Mann_CS3353_Midterm_SplayTree/Midterm_SplayTree/src/SplayTree.cpp -o CMakeFiles/Midterm_SplayTree.dir/src/SplayTree.cpp.s
 
 # Object files for target Midterm_SplayTree
 Midterm_SplayTree_OBJECTS = \
-"CMakeFiles/Midterm_SplayTree.dir/main.cpp.o" \
-"CMakeFiles/Midterm_SplayTree.dir/SplayTree.cpp.o"
+"CMakeFiles/Midterm_SplayTree.dir/src/main.cpp.o" \
+"CMakeFiles/Midterm_SplayTree.dir/src/SplayTree.cpp.o"
 
 # External object files for target Midterm_SplayTree
 Midterm_SplayTree_EXTERNAL_OBJECTS =
 
-Midterm_SplayTree: CMakeFiles/Midterm_SplayTree.dir/main.cpp.o
-Midterm_SplayTree: CMakeFiles/Midterm_SplayTree.dir/SplayTree.cpp.o
+Midterm_SplayTree: CMakeFiles/Midterm_SplayTree.dir/src/main.cpp.o
+Midterm_SplayTree: CMakeFiles/Midterm_SplayTree.dir/src/SplayTree.cpp.o
 Midterm_SplayTree: CMakeFiles/Midterm_SplayTree.dir/build.make
 Midterm_SplayTree: CMakeFiles/Midterm_SplayTree.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/eliasmann/Desktop/Algorithms/Mann_CS3353_Midterm_SplayTree/Midterm_SplayTree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable Midterm_SplayTree"

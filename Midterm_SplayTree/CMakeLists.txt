@@ -3,4 +3,4 @@ project(Midterm_SplayTree)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(Midterm_SplayTree main.cpp SplayTree.cpp SplayTree.h)
+add_executable(Midterm_SplayTree src/main.cpp src/SplayTree.cpp src/SplayTree.h)

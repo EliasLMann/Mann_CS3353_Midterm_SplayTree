@@ -123,59 +123,59 @@ Midterm_SplayTree/fast:
 	$(MAKE) -f CMakeFiles/Midterm_SplayTree.dir/build.make CMakeFiles/Midterm_SplayTree.dir/build
 .PHONY : Midterm_SplayTree/fast
 
-SplayTree.o: SplayTree.cpp.o
+src/SplayTree.o: src/SplayTree.cpp.o
 
-.PHONY : SplayTree.o
-
-# target to build an object file
-SplayTree.cpp.o:
-	$(MAKE) -f CMakeFiles/Midterm_SplayTree.dir/build.make CMakeFiles/Midterm_SplayTree.dir/SplayTree.cpp.o
-.PHONY : SplayTree.cpp.o
-
-SplayTree.i: SplayTree.cpp.i
-
-.PHONY : SplayTree.i
-
-# target to preprocess a source file
-SplayTree.cpp.i:
-	$(MAKE) -f CMakeFiles/Midterm_SplayTree.dir/build.make CMakeFiles/Midterm_SplayTree.dir/SplayTree.cpp.i
-.PHONY : SplayTree.cpp.i
-
-SplayTree.s: SplayTree.cpp.s
-
-.PHONY : SplayTree.s
-
-# target to generate assembly for a file
-SplayTree.cpp.s:
-	$(MAKE) -f CMakeFiles/Midterm_SplayTree.dir/build.make CMakeFiles/Midterm_SplayTree.dir/SplayTree.cpp.s
-.PHONY : SplayTree.cpp.s
-
-main.o: main.cpp.o
-
-.PHONY : main.o
+.PHONY : src/SplayTree.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) -f CMakeFiles/Midterm_SplayTree.dir/build.make CMakeFiles/Midterm_SplayTree.dir/main.cpp.o
-.PHONY : main.cpp.o
+src/SplayTree.cpp.o:
+	$(MAKE) -f CMakeFiles/Midterm_SplayTree.dir/build.make CMakeFiles/Midterm_SplayTree.dir/src/SplayTree.cpp.o
+.PHONY : src/SplayTree.cpp.o
 
-main.i: main.cpp.i
+src/SplayTree.i: src/SplayTree.cpp.i
 
-.PHONY : main.i
+.PHONY : src/SplayTree.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) -f CMakeFiles/Midterm_SplayTree.dir/build.make CMakeFiles/Midterm_SplayTree.dir/main.cpp.i
-.PHONY : main.cpp.i
+src/SplayTree.cpp.i:
+	$(MAKE) -f CMakeFiles/Midterm_SplayTree.dir/build.make CMakeFiles/Midterm_SplayTree.dir/src/SplayTree.cpp.i
+.PHONY : src/SplayTree.cpp.i
 
-main.s: main.cpp.s
+src/SplayTree.s: src/SplayTree.cpp.s
 
-.PHONY : main.s
+.PHONY : src/SplayTree.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) -f CMakeFiles/Midterm_SplayTree.dir/build.make CMakeFiles/Midterm_SplayTree.dir/main.cpp.s
-.PHONY : main.cpp.s
+src/SplayTree.cpp.s:
+	$(MAKE) -f CMakeFiles/Midterm_SplayTree.dir/build.make CMakeFiles/Midterm_SplayTree.dir/src/SplayTree.cpp.s
+.PHONY : src/SplayTree.cpp.s
+
+src/main.o: src/main.cpp.o
+
+.PHONY : src/main.o
+
+# target to build an object file
+src/main.cpp.o:
+	$(MAKE) -f CMakeFiles/Midterm_SplayTree.dir/build.make CMakeFiles/Midterm_SplayTree.dir/src/main.cpp.o
+.PHONY : src/main.cpp.o
+
+src/main.i: src/main.cpp.i
+
+.PHONY : src/main.i
+
+# target to preprocess a source file
+src/main.cpp.i:
+	$(MAKE) -f CMakeFiles/Midterm_SplayTree.dir/build.make CMakeFiles/Midterm_SplayTree.dir/src/main.cpp.i
+.PHONY : src/main.cpp.i
+
+src/main.s: src/main.cpp.s
+
+.PHONY : src/main.s
+
+# target to generate assembly for a file
+src/main.cpp.s:
+	$(MAKE) -f CMakeFiles/Midterm_SplayTree.dir/build.make CMakeFiles/Midterm_SplayTree.dir/src/main.cpp.s
+.PHONY : src/main.cpp.s
 
 # Help Target
 help:
@@ -186,12 +186,12 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... Midterm_SplayTree"
-	@echo "... SplayTree.o"
-	@echo "... SplayTree.i"
-	@echo "... SplayTree.s"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... src/SplayTree.o"
+	@echo "... src/SplayTree.i"
+	@echo "... src/SplayTree.s"
+	@echo "... src/main.o"
+	@echo "... src/main.i"
+	@echo "... src/main.s"
 .PHONY : help
 
 

@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/Midterm_SplayTree.dir/SplayTree.cpp.o"
-  "CMakeFiles/Midterm_SplayTree.dir/main.cpp.o"
+  "CMakeFiles/Midterm_SplayTree.dir/src/SplayTree.cpp.o"
+  "CMakeFiles/Midterm_SplayTree.dir/src/main.cpp.o"
   "Midterm_SplayTree"
   "Midterm_SplayTree.pdb"
 )

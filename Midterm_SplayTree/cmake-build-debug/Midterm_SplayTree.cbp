@@ -80,13 +80,13 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/eliasmann/Desktop/Algorithms/Mann_CS3353_Midterm_SplayTree/Midterm_SplayTree/SplayTree.cpp">
+		<Unit filename="/Users/eliasmann/Desktop/Algorithms/Mann_CS3353_Midterm_SplayTree/Midterm_SplayTree/src/SplayTree.cpp">
 			<Option target="Midterm_SplayTree"/>
 		</Unit>
-		<Unit filename="/Users/eliasmann/Desktop/Algorithms/Mann_CS3353_Midterm_SplayTree/Midterm_SplayTree/SplayTree.h">
+		<Unit filename="/Users/eliasmann/Desktop/Algorithms/Mann_CS3353_Midterm_SplayTree/Midterm_SplayTree/src/SplayTree.h">
 			<Option target="Midterm_SplayTree"/>
 		</Unit>
-		<Unit filename="/Users/eliasmann/Desktop/Algorithms/Mann_CS3353_Midterm_SplayTree/Midterm_SplayTree/main.cpp">
+		<Unit filename="/Users/eliasmann/Desktop/Algorithms/Mann_CS3353_Midterm_SplayTree/Midterm_SplayTree/src/main.cpp">
 			<Option target="Midterm_SplayTree"/>
 		</Unit>
 		<Unit filename="/Users/eliasmann/Desktop/Algorithms/Mann_CS3353_Midterm_SplayTree/Midterm_SplayTree/CMakeLists.txt">

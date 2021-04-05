@@ -1,5 +1,5 @@
 // Author: Elias Mann
-// Code Modified from At: https://github.com/Bibeknam/algorithmtutorprograms/blob/master/data-structures/splay-trees/SplayTree.cpp
+// Code Modified from: https://github.com/Bibeknam/algorithmtutorprograms/blob/master/data-structures/splay-trees/SplayTree.cpp
 
 #include "SplayTree.h"
 
@@ -137,6 +137,7 @@ void SplayTree::prettyPrint() {
 }
 
 
+//called by pre order function, prints contents of nodes with pre order traversal
 void SplayTree::preOrderHelper(NodePtr node) {
     if (node != nullptr) {
         cout<<node->data<<" ";
@@ -145,6 +146,7 @@ void SplayTree::preOrderHelper(NodePtr node) {
     }
 }
 
+//called by in order function, prints contents of nodes with in order traversal
 void SplayTree::inOrderHelper(NodePtr node) {
     if (node != nullptr) {
         inOrderHelper(node->left);
@@ -153,6 +155,7 @@ void SplayTree::inOrderHelper(NodePtr node) {
     }
 }
 
+//called by post order function, prints contents of nodes with post order traversal
 void SplayTree::postOrderHelper(NodePtr node) {
     if (node != nullptr) {
         postOrderHelper(node->left);
@@ -161,6 +164,7 @@ void SplayTree::postOrderHelper(NodePtr node) {
     }
 }
 
+//traverses binary search tree until finds the location of the key
 NodePtr SplayTree::searchTreeHelper(NodePtr node, int key) {
     if (node == nullptr || key == node->data) {
         return node;
@@ -172,6 +176,7 @@ NodePtr SplayTree::searchTreeHelper(NodePtr node, int key) {
     return searchTreeHelper(node->right, key);
 }
 
+//deletes node and rebalances tree
 void SplayTree::deleteNodeHelper(NodePtr node, int key) {
     NodePtr x = nullptr;
     NodePtr t, s;
@@ -191,15 +196,18 @@ void SplayTree::deleteNodeHelper(NodePtr node, int key) {
         cout<<"Couldn't find key in the tree"<<endl;
         return;
     }
+    splay(x);
     split(x, s, t); // split the tree
     if (s->left){ // remove x
         s->left->parent = nullptr;
     }
+    //s->left is left subtree, t is right subtree
     mRoot = join(s->left, t);
     delete(s);
     s = nullptr;
 }
 
+//prints a diagram of the splay tree
 void SplayTree::printHelper(NodePtr root, string indent, bool last) {
     // print the tree structure on the screen
     if (root != nullptr) {
@@ -297,6 +305,7 @@ NodePtr SplayTree::join(NodePtr s, NodePtr t){
     if (!t) {
         return s;
     }
+    //x point to the greatest node in s
     NodePtr x = maximum(s);
     splay(x);
     x->right = t;
@@ -304,9 +313,8 @@ NodePtr SplayTree::join(NodePtr s, NodePtr t){
     return x;
 }
 
-// splits the tree into s and t
+// splits the tree into s (root with left subtree) and t (right subtree)
 void SplayTree::split(NodePtr &x, NodePtr &s, NodePtr &t) {
-    splay(x);
     if (x->right) {
         t = x->right;
         t->parent = nullptr;

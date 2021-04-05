@@ -1,5 +1,5 @@
 // Author: Elias Mann
-// Code Modified from At: https://github.com/Bibeknam/algorithmtutorprograms/blob/master/data-structures/splay-trees/SplayTree.cpp
+// Code Modified from: https://github.com/Bibeknam/algorithmtutorprograms/blob/master/data-structures/splay-trees/SplayTree.cpp
 #include "SplayTree.h"
 
 //Method that prints the splay tree and pre order traversal
@@ -23,15 +23,12 @@ int main() {
     splayTree1.insert(42);
     splayTree1.insert(20);
 
-
-
     std::cout <<"In Splay Tree Diagrams, └──── denotes a right child and ├──── denotes a left child"<< std::endl << std::endl;
     //this will print out a diagram of the tree
     std::cout <<"INITIAL SPLAY TREE:" << std::endl << std::endl;
     printTree(splayTree1);
 
 //==============================SPLAY TREE INSERTION TEST===================================
-
     splayTree1.insert(10);
     std::cout << std::endl << std::endl <<"AFTER INSERTING 10:"<< std::endl << std::endl;
     printTree(splayTree1);
@@ -42,8 +39,8 @@ int main() {
     printTree(splayTree1);
 
 //==============================SPLAY TREE DELETE TEST===================================
-    splayTree1.deleteNode(3);
-    std::cout << std::endl << std::endl <<"AFTER DELETING 3:"<< std::endl << std::endl;
+    splayTree1.deleteNode(22);
+    std::cout << std::endl << std::endl <<"AFTER DELETING 22:"<< std::endl << std::endl;
     printTree(splayTree1);
 
     return 0;
