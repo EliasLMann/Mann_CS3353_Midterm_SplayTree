@@ -23,74 +23,51 @@ typedef Node *NodePtr;
 class SplayTree {
 public:
     SplayTree();
-
     // Pre-Order traversal
     // Node->Left Subtree->Right Subtree
     void preorder();
-
     // In-Order traversal
     // Left Subtree -> Node -> Right Subtree
     void inorder();
-
     // Post-Order traversal
     // Left Subtree -> Right Subtree -> Node
     void postorder();
-
     // search the tree for the key k
     // and return the corresponding node
     NodePtr searchTree(int k);
-
     // find the node with the minimum key
     NodePtr minimum(NodePtr node);
-
     // find the node with the maximum key
     NodePtr maximum(NodePtr node);
-
     // find the successor of a given node
     NodePtr successor(NodePtr x);
     // find the predecessor of a given node
     NodePtr predecessor(NodePtr x);
-
     // insert the key to the tree in its appropriate position
     void insert(int key);
-
     NodePtr getRoot();
-
     // delete the node from the tree
     void deleteNode(int data);
-
     // print the tree structure on the screen
     void prettyPrint();
-
 private:
-    NodePtr root;
-
+    NodePtr mRoot;
     void preOrderHelper(NodePtr node);
     void inOrderHelper(NodePtr node);
-
     void postOrderHelper(NodePtr node);
-
     NodePtr searchTreeHelper(NodePtr node, int key);
-
     void deleteNodeHelper(NodePtr node, int key);
-
     void printHelper(NodePtr root, string indent, bool last);
-
     // rotate left at node x
     void leftRotate(NodePtr x);
-
     // rotate right at node x
     void rightRotate(NodePtr x);
-
     // splaying
     void splay(NodePtr x);
-
     // joins two trees s and t
     NodePtr join(NodePtr s, NodePtr t);
-
     // splits the tree into s and t
     void split(NodePtr &x, NodePtr &s, NodePtr &t);
-
 };
 
 

@@ -4,31 +4,31 @@
 #include "SplayTree.h"
 
 SplayTree::SplayTree() {
-    root = nullptr;
+    mRoot = nullptr;
 }
 
 // Pre-Order traversal
 // Node->Left Subtree->Right Subtree
 void SplayTree::preorder() {
-    preOrderHelper(this->root);
+    preOrderHelper(this->mRoot);
 }
 
 // In-Order traversal
 // Left Subtree -> Node -> Right Subtree
 void SplayTree::inorder() {
-    inOrderHelper(this->root);
+    inOrderHelper(this->mRoot);
 }
 
 // Post-Order traversal
 // Left Subtree -> Right Subtree -> Node
 void SplayTree::postorder() {
-    postOrderHelper(this->root);
+    postOrderHelper(this->mRoot);
 }
 
 // search the tree for the key k
 // and return the corresponding node
 NodePtr SplayTree::searchTree(int k) {
-    NodePtr x = searchTreeHelper(this->root, k);
+    NodePtr x = searchTreeHelper(this->mRoot, k);
     if (x) {
         splay(x);
     }
@@ -97,7 +97,7 @@ void SplayTree::insert(int key) {
     node->right = nullptr;
     node->data = key;
     NodePtr y = nullptr;
-    NodePtr x = this->root;
+    NodePtr x = this->mRoot;
 
     while (x != nullptr) {
         y = x;
@@ -111,7 +111,7 @@ void SplayTree::insert(int key) {
     // y is parent of x
     node->parent = y;
     if (y == nullptr) {
-        root = node;
+        mRoot = node;
     } else if (node->data < y->data) {
         y->left = node;
     } else {
@@ -123,17 +123,17 @@ void SplayTree::insert(int key) {
 }
 
 NodePtr SplayTree::getRoot(){
-    return this->root;
+    return this->mRoot;
 }
 
 // delete the node from the tree
 void SplayTree::deleteNode(int data) {
-    deleteNodeHelper(this->root, data);
+    deleteNodeHelper(this->mRoot, data);
 }
 
 // print the tree structure on the screen
 void SplayTree::prettyPrint() {
-    printHelper(this->root, "", true);
+    printHelper(this->mRoot, "", true);
 }
 
 
@@ -195,7 +195,7 @@ void SplayTree::deleteNodeHelper(NodePtr node, int key) {
     if (s->left){ // remove x
         s->left->parent = nullptr;
     }
-    root = join(s->left, t);
+    mRoot = join(s->left, t);
     delete(s);
     s = nullptr;
 }
@@ -228,7 +228,7 @@ void SplayTree::leftRotate(NodePtr x) {
     }
     y->parent = x->parent;
     if (x->parent == nullptr) {
-        this->root = y;
+        this->mRoot = y;
     } else if (x == x->parent->left) {
         x->parent->left = y;
     } else {
@@ -247,7 +247,7 @@ void SplayTree::rightRotate(NodePtr x) {
     }
     y->parent = x->parent;
     if (x->parent == nullptr) {
-        this->root = y;
+        this->mRoot = y;
     } else if (x == x->parent->right) {
         x->parent->right = y;
     } else {

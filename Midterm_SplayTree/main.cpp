@@ -2,31 +2,51 @@
 // Code Modified from At: https://github.com/Bibeknam/algorithmtutorprograms/blob/master/data-structures/splay-trees/SplayTree.cpp
 #include "SplayTree.h"
 
-//test
+//Method that prints the splay tree and pre order traversal
+void printTree(SplayTree &splayTree1) {
+    cout << "Splay Tree Diagram:" << endl << endl;
+    splayTree1.prettyPrint();
+    //this will print a pre-order traversal of the tree
+    cout << endl <<"Pre-Order Traversal:"<< endl;
+    splayTree1.preorder();
+}
 
 int main() {
-    SplayTree bst;
-    bst.insert(33);
-    bst.insert(44);
-    bst.insert(67);
-    bst.insert(5);
-    bst.insert(89);
-    bst.insert(41);
-    bst.insert(98);
-    bst.insert(1);
-    bst.prettyPrint();
-    bst.searchTree(33);
-    bst.searchTree(44);
-    bst.prettyPrint();
-    bst.deleteNode(89);
-    bst.deleteNode(67);
-    bst.deleteNode(41);
-    bst.deleteNode(5);
-    bst.prettyPrint();
-    bst.deleteNode(98);
-    bst.deleteNode(1);
-    bst.deleteNode(44);
-    bst.deleteNode(33);
-    bst.prettyPrint();
+
+//==============================CREATING INITIAL TREE=======================================
+    SplayTree splayTree1;
+    splayTree1.insert(3);
+    splayTree1.insert(39);
+    splayTree1.insert(87);
+    splayTree1.insert(7);
+    splayTree1.insert(22);
+    splayTree1.insert(42);
+    splayTree1.insert(20);
+
+
+
+    std::cout <<"In Splay Tree Diagrams, └──── denotes a right child and ├──── denotes a left child"<< std::endl << std::endl;
+    //this will print out a diagram of the tree
+    std::cout <<"INITIAL SPLAY TREE:" << std::endl << std::endl;
+    printTree(splayTree1);
+
+//==============================SPLAY TREE INSERTION TEST===================================
+
+    splayTree1.insert(10);
+    std::cout << std::endl << std::endl <<"AFTER INSERTING 10:"<< std::endl << std::endl;
+    printTree(splayTree1);
+
+//==============================SPLAY TREE SEARCH TEST===================================
+    Node* testNode = splayTree1.searchTree(42);
+    std::cout << std::endl << std::endl <<"AFTER SEARCHING FOR 42:"<< std::endl << std::endl;
+    printTree(splayTree1);
+
+//==============================SPLAY TREE DELETE TEST===================================
+    splayTree1.deleteNode(3);
+    std::cout << std::endl << std::endl <<"AFTER DELETING 3:"<< std::endl << std::endl;
+    printTree(splayTree1);
+
     return 0;
 }
+
+
